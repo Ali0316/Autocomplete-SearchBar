@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useClickOutside } from "react-click-outside-hook";
+import { IoIosClose } from "react-icons/io";
 
 const Container = styled.div`
   width: 100vw;
@@ -50,9 +51,8 @@ const CancelButton = styled(motion.div)`
   align-items: center;
   justify-content: center;
   margin-left: 0.3em;
-  padding: 0.4em 0.5em;
   cursor: pointer;
-  font-size: 0.7em;
+  font-size: 1.7em;
 `;
 
 const containerVariants = {
@@ -78,7 +78,8 @@ function SearchBar() {
 
   return (
     <Container>
-      <SearchBarContainer>
+      <SearchBarContainer
+      >
         <SearchContainer
           animate={isFocused ? "focused" : "collapsed"}
           variants={containerVariants}
@@ -100,7 +101,7 @@ function SearchBar() {
             exit={{ display: "none", opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            Cancel
+            <IoIosClose/>
           </CancelButton>
         )}
         {/* </AnimatePresence> */}

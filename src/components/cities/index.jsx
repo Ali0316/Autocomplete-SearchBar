@@ -7,6 +7,7 @@ const ResultContainer = styled.div`
   border-bottom: 2px solid #d8d8d852;
   padding: 2px 8px;
   align-items: center;
+  cursor: pointer;
 `;
 
 const CityName = styled.h3`

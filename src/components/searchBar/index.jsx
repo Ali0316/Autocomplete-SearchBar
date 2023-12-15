@@ -14,15 +14,15 @@ import { City } from "../cities";
 const SearchBarContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  width: 34em;
-  height: 3.8em;
+  width: 24em;
+  height: 2.8em;
   background-color: #fff;
   border-radius: 6px;
   box-shadow: 0px 2px 12px 3px rgba(0, 0, 0, 0.14);
 `;
 
 const SearchInputContainer = styled.div`
-  min-height: 4em;
+  min-height: 2.8em;
   display: flex;
   align-items: center;
   position: relative;
@@ -34,7 +34,7 @@ const SearchInput = styled.input`
   height: 100%;
   outline: none;
   border: none;
-  font-size: 21px;
+  font-size: 18px;
   color: #12112e;
   font-weight: 500;
   border-radius: 6px;
@@ -97,8 +97,8 @@ const LoadingWrapper = styled.div`
 `;
 
 const WarningMessage = styled.span`
-  color: #a1a1a1;
-  font-size: 14px;
+  color: #bebebe;
+  font-size: 18px;
   display: flex;
   align-self: center;
   justify-self: center;
@@ -106,10 +106,10 @@ const WarningMessage = styled.span`
 
 const containerVariants = {
   expanded: {
-    height: "30em",
+    height: "22em",
   },
   collapsed: {
-    height: "3.8em",
+    height: "2.8em",
   },
 };
 

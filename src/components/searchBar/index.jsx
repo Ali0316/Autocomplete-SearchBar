@@ -156,7 +156,7 @@ export function SearchBar(props) {
       method: "GET",
       url: "https://wft-geo-db.p.rapidapi.com/v1/geo/cities",
       params: {
-        minPopulation: "3000000",
+        minPopulation: "100000",
         namePrefix: `${query}`,
       },
       headers: {
@@ -203,7 +203,7 @@ export function SearchBar(props) {
           <IoSearch />
         </SearchIcon>
         <SearchInput
-          placeholder="Search for Series/Shows"
+          placeholder="Search for City"
           onFocus={expandContainer}
           ref={inputRef}
           value={searchQuery}

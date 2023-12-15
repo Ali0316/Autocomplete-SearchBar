@@ -16,7 +16,7 @@ const SearchBarContainer = styled(motion.div)`
   height: 3em;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #bebebe;
+  /* border: 1px solid #bebebe; */
   align-items: center;
   flex-direction: row;
 `;

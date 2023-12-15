@@ -11,12 +11,10 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const SearchBarContainer = styled(motion.div)`
-  width: 24em;
-  height: 3em;
+const SearchBarContainer = styled.div`
+  height: 2.5em;
   display: flex;
-  justify-content: space-between;
-  /* border: 1px solid #bebebe; */
+  /* justify-content: space-between; */
   align-items: center;
   flex-direction: row;
 `;
@@ -35,7 +33,7 @@ const SearchBarInput = styled.input`
   border-radius: 2em;
   height: 100%;
   padding-left: 2em;
-  font-size: 1.2em;
+  font-size: 0.9em;
 
   &:focus {
     &::placeholder {
@@ -51,17 +49,18 @@ const CancelButton = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.6em 0.9em;
-  margin-right: 0.5em;
+  margin-left: 0.3em;
+  padding: 0.4em 0.5em;
   cursor: pointer;
+  font-size: 0.7em;
 `;
 
 const containerVariants = {
   focused: {
-    width: "18em",
+    width: "12em",
   },
   collapsed: {
-    width: "24em",
+    width: "14em",
   },
 };
 
